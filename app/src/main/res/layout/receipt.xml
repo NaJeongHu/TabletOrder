@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="700dp"
+    android:layout_height="600dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="600dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10sp"
+            android:text="주문표"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/del_cel"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="선택 삭제"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/del_all"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="전체 삭제"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/keep_going"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="계속 쇼핑"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/last_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="최종 주문"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
